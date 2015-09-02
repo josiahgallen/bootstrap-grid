@@ -1,0 +1,67 @@
+@import url(../node_modules/bootstrap/dist/css/bootstrap.css);
+body {
+  font-family: 'Open Sans' sans-serif;
+  color: #9c9da1; }
+  body nav {
+    color: #595d60; }
+    body nav div:first-child div:first-child {
+      font-weight: 600; }
+    body nav .navbar-brand span {
+      color: #3f85c1; }
+    body nav .button {
+      background: #3f85c1; }
+  body .basic-textbox {
+    padding: 0 2em 2em 2em;
+    border-bottom: 2px solid #959595;
+    margin-bottom: 2em; }
+    body .basic-textbox h3 {
+      color: #969a9d;
+      font-weight: 500;
+      font-style: bold; }
+    body .basic-textbox button {
+      background: #3f85c1;
+      color: white;
+      padding: 0.5em 5em;
+      margin-bottom: 1em; }
+  body .border-top {
+    border-bottom: none;
+    border-top: 2px solid #959595;
+    margin-top: 2em; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background: white;
+  padding: .1em;
+  border-radius: 50em; }
+
+nav.navbar.navbar-default {
+  margin-bottom: 0; }
+  nav.navbar.navbar-default .collapsed {
+    background: #3f85c1;
+    color: white; }
+
+.jumbotron {
+  text-align: center;
+  color: white;
+  background: url(/images/hero-image.jpg);
+  background-size: cover;
+  padding: 5em 0; }
+  .jumbotron h1 {
+    font-size: 5em; }
+
+.thumbnail {
+  border: none;
+  margin-bottom: 0;
+  font-size: 2em; }
+
+.container .row {
+  font-size: 1.4em; }
+
+footer {
+  background: #3a414b;
+  padding: 2em;
+  margin-top: 2em; }
+  footer .footerlinks {
+    width: 10em; }
+    footer .footerlinks a {
+      color: #9c9da1;
+      text-decoration: underline; }
