@@ -10,9 +10,12 @@ body {
       color: #3f85c1; }
     body nav .button {
       background: #3f85c1; }
+    body nav .navbar-right button {
+      background: #3f85c1;
+      color: white;
+      margin-left: 2em; }
   body .basic-textbox {
     padding: 0 2em 2em 2em;
-    border-bottom: 2px solid #959595;
     margin-bottom: 2em; }
     body .basic-textbox h3 {
       color: #969a9d;
@@ -43,10 +46,17 @@ nav.navbar.navbar-default {
   text-align: center;
   color: white;
   background: url(/images/hero-image.jpg);
-  background-size: cover;
-  padding: 5em 0; }
+  background-size: cover; }
   .jumbotron h1 {
-    font-size: 5em; }
+    font-size: 5em;
+    display: block;
+    padding-top: 1em; }
+
+.bottom-border {
+  border-bottom: 2px solid #959595;
+  margin-bottom: 2em; }
+  .bottom-border p {
+    padding-bottom: 2em; }
 
 .thumbnail {
   border: none;
@@ -56,12 +66,34 @@ nav.navbar.navbar-default {
 .container .row {
   font-size: 1.4em; }
 
+.well {
+  border: 1em solid white; }
+
+.girl {
+  margin-top: 2em; }
+
 footer {
   background: #3a414b;
   padding: 2em;
-  margin-top: 2em; }
+  margin-top: 2em;
+  overflow: hidden; }
   footer .footerlinks {
     width: 10em; }
     footer .footerlinks a {
       color: #9c9da1;
       text-decoration: underline; }
+
+@media screen and (min-width: 48em) {
+  .jumbotron {
+    box-sizing: border-box;
+    height: 30em; }
+    .jumbotron h1 {
+      float: left;
+      box-sizing: border-box;
+      padding-top: 2em;
+      width: 50%; }
+    .jumbotron p {
+      float: left;
+      width: 50%;
+      padding-top: 7.8em;
+      box-sizing: border-box; } }

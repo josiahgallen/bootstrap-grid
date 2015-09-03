@@ -1,105 +1,136 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.css';
-
 $blue: #3f85c1;
-
 body {
-	font-family: 'Open Sans' sans-serif;
-	color: #9c9da1;
-
-	nav {
-		color: #595d60;
-
-		div:first-child {
-			div:first-child {
-				font-weight: 600;
-			}
-		}
-
-		.navbar-brand {
-			span {
-				color: $blue;
-			}
-		}
-
-		.button {
-			background: $blue;
-		}
-	}
-
-	.basic-textbox {
-		padding: 0 2em 2em 2em;
-		border-bottom: 2px solid #959595;
-		margin-bottom: 2em;
-
-		h3 {
-			color: #969a9d;
-			font-weight: 500;
-			font-style: bold;
-		}
-		button {
-			background: $blue;
-			color: white;
-			padding: .5em 5em;
-			margin-bottom: 1em;
-		}
-	}
-
-	.border-top {
-		border-bottom: none;
-		border-top: 2px solid #959595;
-		margin-top: 2em;
-	}
+    font-family: 'Open Sans' sans-serif;
+    color: #9c9da1;
+    nav {
+        color: #595d60;
+        div:first-child {
+            div:first-child {
+                font-weight: 600;
+            }
+        }
+        .navbar-brand {
+            span {
+                color: $blue;
+            }
+        }
+        .button {
+            background: $blue;
+        }
+        .navbar-right {
+            button {
+                background: $blue;
+                color: white;
+                margin-left: 2em;
+            }
+        }
+    }
+    .basic-textbox {
+        padding: 0 2em 2em 2em;
+        margin-bottom: 2em;
+        h3 {
+            color: #969a9d;
+            font-weight: 500;
+            font-style: bold;
+        }
+        button {
+            background: $blue;
+            color: white;
+            padding: .5em 5em;
+            margin-bottom: 1em;
+        }
+    }
+    .border-top {
+        border-bottom: none;
+        border-top: 2px solid #959595;
+        margin-top: 2em;
+    }
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-				background: white;
-				padding: .1em;
-				border-radius: 50em;
-			}
+    background: white;
+    padding: .1em;
+    border-radius: 50em;
+}
 
 nav.navbar.navbar-default {
-	margin-bottom: 0;
-	.collapsed {
-			background: $blue;
-			color: white;
-		}
+    margin-bottom: 0;
+    .collapsed {
+        background: $blue;
+        color: white;
+    }
 }
 
 .jumbotron {
-	text-align: center;
-	color: white;
-	background: url(/images/hero-image.jpg);
-	background-size: cover;
-	padding: 5em 0;
+    text-align: center;
+    color: white;
+    background: url(/images/hero-image.jpg);
+    background-size: cover;
+    h1 {
+        font-size: 5em;
+        display: block;
+        padding-top: 1em;
+    }
+}
 
-	h1 {
-		font-size: 5em;
+.bottom-border {
+	border-bottom: 2px solid #959595;
+	margin-bottom: 2em;
+	p {
+		padding-bottom: 2em;
 	}
 }
 
-	.thumbnail {
-		border: none;
-		margin-bottom: 0;
-		font-size: 2em;
-	}
-	.container {
-		.row {
-			font-size: 1.4em;
-		}
-	}
+.thumbnail {
+    border: none;
+    margin-bottom: 0;
+    font-size: 2em;
+}
 
-	footer {
-		background: #3a414b;
-		padding: 2em;
-		margin-top: 2em;
+.container {
+    .row {
+        font-size: 1.4em;
+    }
+}
 
-		.footerlinks{
-			width: 10em;	
+.well {
+	border: 1em solid white;
+}
 
-			a {
-				color:#9c9da1;
-				text-decoration: underline;
-			}	
-		}
-	}
-		
+.girl {
+	margin-top: 2em;
+}
+
+footer {
+    background: #3a414b;
+    padding: 2em;
+    margin-top: 2em;
+    overflow: hidden;
+    .footerlinks {
+        width: 10em;
+        a {
+            color: #9c9da1;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media screen and(min-width: 48em) {
+    .jumbotron {
+        box-sizing: border-box;
+        height: 30em;
+        h1 {
+            float: left;
+            box-sizing: border-box;
+            padding-top: 2em;
+            width: 50%;
+        }
+        p {
+            float: left;
+            width: 50%;
+            padding-top: 7.8em;
+            box-sizing: border-box;
+        }
+    }
+}
