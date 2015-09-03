@@ -148,3 +148,21 @@ footer {
 		} 
 	}
 }
+
+@media screen and(min-width: 71.5em) {
+	.jumbotron {
+		overflow: hidden;
+
+		h1 {
+			display: block;
+			padding: 1em 0 0 0;
+			width: 100%
+		}
+		p { 
+			display: block;
+			padding: 0;
+			width: 100%;
+
+		}
+	}
+}
